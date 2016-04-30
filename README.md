@@ -29,6 +29,7 @@ When that bug is fixed, just installing this module should work. Until then add 
 ```
 
 ### Changelog
+* 0.1.1 - Update metadata and add icon.
 * 0.0.1 - First version. Provide basic linting via puppet-lint.
 
 ### Acknowledgements

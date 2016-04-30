@@ -2,14 +2,14 @@
     "name": "puppetlinter",
     "displayName": "Puppet-Linter",
     "description": "Use puppet-lint on .pp files.",
-    "version": "0.0.1",
+    "version": "0.1.1",
     "publisher": "jgreat",
     "license": "MIT",
     "keywords": [
         "puppet",
         "puppet-lint"
     ],
-    "icon": "./puppet.png",
+    "icon": "puppet.png",
     "engines": {
         "vscode": "^1.0.0"
     },
@@ -21,8 +21,13 @@
         "languages": [
             {
                 "id": "puppet",
-                "aliases": ["Puppet", "puppet"],
-                "extensions": [".pp"]
+                "aliases": [
+                    "Puppet",
+                    "puppet"
+                ],
+                "extensions": [
+                    ".pp"
+                ]
             }
         ]
     },
@@ -38,4 +43,4 @@
         "typescript": "^1.8.5",
         "vscode": "^0.11.0"
     }
-}   
+}
