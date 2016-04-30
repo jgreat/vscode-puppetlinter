@@ -4,11 +4,17 @@
     "description": "Use puppet-lint on .pp files.",
     "version": "0.0.1",
     "publisher": "jgreat",
+    "license": "MIT",
+    "keywords": [
+        "puppet",
+        "puppet-lint"
+    ],
+    "icon": "./puppet.png",
     "engines": {
         "vscode": "^1.0.0"
     },
     "categories": [
-        "Other"
+        "Linters"
     ],
     "main": "./out/src/extension",
     "contributes": {
