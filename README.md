@@ -1,13 +1,39 @@
-# README
-## This is the README for your extension "puppetlinter"
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+# PuppetLinter
+Runs puppet-lint on save. 
 
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
+* Github: https://github.com/jgreat/vscode-puppetlinter
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+### Requirements
+puppet-lint ruby gem http://puppet-lint.com/
 
-**Enjoy!**
+```
+sudo gem install puppet-lint
+```
+
+### Disable Checks
+To disable various checks, create a `~/.puppet-lint.rc` file. Add switches, one per line. For full list of switches run `puppet-lint --help`
+
+```
+--no-80chars-check
+--no-case_without_default-check
+```
+
+### Puppet .pp File Detection
+There is a vscode bug filed for Ruby taking .pp file association by default: https://github.com/Microsoft/vscode/issues/5366
+
+When that bug is fixed, just installing this module should work. Until then add the following to your User Preferences json.
+```
+"files.associations": {
+        "*.pp": "puppet"
+}
+```
+
+### Changelog
+* 0.0.1 - First version. Provide basic linting via puppet-lint.
+
+### Acknowledgements
+All props go to the excelent tutorial by hoovercj on github:
+https://github.com/hoovercj/vscode-extension-tutorial
+
+### Contributing
+Please do. Fork the github repo and submit a PR. 
