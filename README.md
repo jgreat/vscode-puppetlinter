@@ -1,5 +1,8 @@
-# PuppetLinter
-Runs puppet-lint on save. 
+# Deprecated - PuppetLinter
+
+This project has been combined with [Puppet](https://marketplace.visualstudio.com/items?itemName=Borke.puppet) extension. Please install that instead.
+
+Runs puppet-lint on save.
 
 * Github: https://github.com/jgreat/vscode-puppetlinter
 
@@ -37,4 +40,4 @@ All props go to the excelent tutorial by hoovercj on github:
 https://github.com/hoovercj/vscode-extension-tutorial
 
 ### Contributing
-Please do. Fork the github repo and submit a PR. 
+Please do. Fork the github repo and submit a PR.
